@@ -1,0 +1,12 @@
+@import "_nullstyle";
+@font-face {
+  font-family: "Helvetica";
+  src: url(fonts/Helvetica-Bold.ttf), url(fonts/helvetica-bold.woff2);
+  font-weight: bold;
+  font-style: normal;
+}
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
