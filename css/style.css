@@ -102,6 +102,24 @@ body {
 }
 .header__bag {
   justify-self: end;
+  position: relative;
+}
+.header__bag-on span {
+  position: absolute;
+  right: 0px;
+  bottom: -2px;
+  width: 15px;
+  height: 15px;
+  z-index: 2;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border-radius: 50%;
+  font-size: 11px;
+  display: inline-block;
+  text-align: center;
 }
 .header__logo {
   justify-self: center;
@@ -110,6 +128,8 @@ body {
   display: grid;
   grid-template: 1fr/auto auto auto;
   align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 .header-menu {
   display: grid;
@@ -118,4 +138,60 @@ body {
        column-gap: 20px;
   max-width: 251px;
   width: 100%;
+}
+.header-menu a {
+  color: #5c5c5e;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.hero {
+  min-height: calc(100vh - 80px);
+  background-image: url(../image/bg.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding-top: 11%;
+}
+.hero__inner {
+  display: grid;
+  align-items: center;
+  max-width: 50vw;
+  width: 100%;
+}
+.hero__title {
+  font-size: 96px;
+  line-height: 110px;
+  margin-bottom: 10px;
+}
+.hero__subtitle {
+  font-size: 36px;
+  line-height: 41px;
+  margin-bottom: 5px;
+}
+.hero__text {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.buy-btn {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  justify-items: center;
+  width: 100%;
+  border: 1px solid rgb(238, 42, 205);
+  margin: 50px 0 10px;
+  cursor: pointer;
+}
+.buy-btn__text {
+  text-align: center;
+  width: 100%;
+  padding: 21px 10px;
+  color: #fff;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+}
+.buy-btn__price {
+  padding: 21px 10px;
 }

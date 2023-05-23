@@ -24,21 +24,44 @@ body {
   line-height: 1.4;
   color: #5c5c5e;
 }
+.main {
+}
 //---------------Header------------//
 .header {
-    padding: 19px 0px;
-    border-bottom: 1px solid #cacad6;
-    
-    &__bag{
-      justify-self: end;
+  padding: 19px 0px;
+  border-bottom: 1px solid #cacad6;
+
+  &__bag {
+    justify-self: end;
+    position: relative;
+  }
+  &__bag-on {
+    span {
+      position: absolute;
+      right: 0px;
+      bottom: -2px;
+      width: 15px;
+      height: 15px;
+      z-index: 2;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      background-color: black;
+      border-radius: 50%;
+      font-size: 11px;
+      display: inline-block;
+      text-align: center;
     }
-    &__logo{
-        justify-self: center;
-    }
-    &__nav {
+  }
+  &__logo {
+    justify-self: center;
+  }
+  &__nav {
     display: grid;
     grid-template: 1fr / auto auto auto;
     align-items: center;
+    column-gap: 40px;
   }
 
   &__menu {
@@ -47,14 +70,82 @@ body {
 .container {
 }
 .header-menu {
-    display: grid;
-    grid-template: 1fr / auto auto auto;
-    column-gap: 20px;
-    max-width: 251px;
-    width: 100%;
+  display: grid;
+  grid-template: 1fr / auto auto auto;
+  column-gap: 20px;
+  max-width: 251px;
+  width: 100%;
+  a {
+    color: #5c5c5e;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
   &__item {
   }
 
   &__link {
+  }
+}
+//---------------------Hero-------------//
+.hero {
+  min-height: calc(100vh - 80px);
+  background-image: url(../image/bg.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding-top: 11%;
+
+  &__inner {
+    display: grid;
+    align-items: center;
+    max-width: 50vw;
+    width: 100%;
+  }
+  &__title {
+    font-size: 96px;
+    line-height: 110px;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    line-height: 41px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.container {
+}
+.title {
+}
+.buy-btn {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+  border: 1px solid rgb(238, 42, 205);
+  margin: 50px 0 10px;
+  cursor: pointer;
+  &__text {
+    text-align: center;
+    width: 100%;
+    padding: 21px 10px;
+    color: #fff;
+    background: linear-gradient(
+      180deg,
+      #bc10d8 0%,
+      rgba(80, 0, 250, 0.93) 100%
+    );
+  }
+
+  &__price {
+    padding: 21px 10px;
   }
 }
